@@ -1,0 +1,23 @@
+---
+title: "Installing and maintaining R packages using lwPackageHelpR"
+# author: "John Minter"
+date: "Last updated: 2019-04-09"
+output:
+  rmarkdown::html_vignette:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+vignette: >
+  %\VignetteIndexEntry{Installing and maintaining R packages using lwPackageHelpR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+suppressWarnings(suppressMessages(suppressPackageStartupMessages(library(ggplot2))))
+```
+# Introduction
+
+This example is...

@@ -1,0 +1,18 @@
+Package: lwPackageHelperR
+Title: Convenience functions maintaining R packages on a system
+Version: 0.0.0.1
+Authors@R: person("Minter", "John", email= "jrminter@gmail.com", role = c("aut", "cre"))
+Maintainer: John Minter <jrminter@gmail.com>
+Description: This package provides convenience functions for installing
+    and updating packages in R and RStudio.
+Depends:
+    R (>= 3.4.0),
+Imports:
+    devtools,
+    knitr,
+Suggests:
+License: GPL (>= 2)
+LazyData: true
+VignetteBuilder: knitr
+RoxygenNote: 6.1.1
+Encoding: UTF-8
