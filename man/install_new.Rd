@@ -5,14 +5,14 @@
 \title{Install a new package}
 \usage{
 install_new(pkg, repo = "http://cran.revolutionanalytics.com/",
-  lib = .Library)
+  libPath = .libPaths()[1])
 }
 \arguments{
 \item{pkg}{String. The package to install}
 
 \item{repo}{Sring, Repository. Default: 'http://cran.revolutionanalytics.com/'}
 
-\item{lib}{Library. Default: .Library}
+\item{libPath}{String Ex:.libPaths()[1]}
 }
 \description{
 Install a new package
