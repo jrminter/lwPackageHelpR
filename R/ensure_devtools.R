@@ -1,5 +1,7 @@
 #' Ensure devtools are installed
 #' 
+#' @import devtools
+#' 
 #' @export
 #' 
 #' @examples
