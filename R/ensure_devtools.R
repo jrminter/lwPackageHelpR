@@ -13,7 +13,7 @@ ensure_devtools <- function(){
   if ("devtools" %in% installed.packages()){
     print('devtools already installed')
   }else{
-    utils::install.packages("devtools",repos=str.cran.repo,
+    utils::install.packages("devtools", repos=str.cran.repo,
                              dep=TRUE,lib=str.lib)
     print('devtools installed')
     

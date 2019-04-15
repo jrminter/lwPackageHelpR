@@ -20,3 +20,46 @@ knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
 # Introduction
 
 `lwPackageHelpR` is a light weight R package install and update manager.
+
+# Key Functions
+
+There are two key functions:
+
+1. `install_new(pkg, repo = "http://cran.revolutionanalytics.com/", libPath = .libPaths()[1]))`
+
+2.  `install_new_github(pkg, repo, libPath)`
+
+# Examples
+
+## Install a new package
+
+This function checks to see if the package is installed. If not,
+it will install the package. Use it like this:
+
+```{r install_dt}
+if( Sys.info()['sysname'] == "Windows"){
+	
+	Sys.setenv(JAVA_HOME="")
+	print("unset JAVA_HOME for Windows")
+}
+
+library(lwPackageHelperR)
+install_new('devtools', .libPaths()[1])
+
+```
+
+## Install a new package from github
+
+Here we install the development version of Yihui Xie's
+`xaringan` package from github.
+
+``````{r install_xa_gt}
+if( Sys.info()['sysname'] == "Windows"){
+	
+	Sys.setenv(JAVA_HOME="")
+	print("unset JAVA_HOME for Windows")
+}
+
+install_new_github('xaringan','yihui',.libPaths()[1])
+
+```
