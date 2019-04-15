@@ -1,0 +1,22 @@
+---
+title: "Getting Started with lwPackageHelpR"
+# author: "John Minter"
+date: "Last updated: 2019-04-15"
+output:
+  rmarkdown::html_vignette:
+    number_sections: true
+    toc: true
+    toc_depth: 2
+vignette: >
+  %\VignetteIndexEntry{Getting Started with lwPackageHelpR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+
+```{r, echo=FALSE}
+knitr::opts_chunk$set(echo = TRUE, warning=FALSE)
+```
+# Introduction
+
+`lwPackageHelpR` is a light weight R package install and update manager.
